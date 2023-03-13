@@ -1,10 +1,10 @@
 from ..models import Measurement
+import time
 
 def get_measurements():
-    queryset = Measurement.objects.all().order_by('-dateTime')[:10]
-    return (queryset)
+    time.sleep(0.5)
+    return ()
 
 def create_measurement(form):
-    measurement = form.save()
-    measurement.save()
+    time.sleep(0.5)
     return ()
