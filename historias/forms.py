@@ -1,9 +1,9 @@
 from django import forms
-from .models import Variable
+from .models import Historia
 
-class VariableForm(forms.ModelForm):
+class HistoriaForm(forms.ModelForm):
     class Meta:
-        model = Variable
+        model = Historia
         fields = [
             'name',
         ]
