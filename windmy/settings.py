@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'measurements',
+    'plantillas',
     'historias',
 ]
 
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'windmy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'monitoring_db',
-        'USER': 'monitoring_user',
+        'NAME': 'windmy_db',
+        'USER': 'windmy_user',
         'PASSWORD': 'isis2503',
-        'HOST': '10.128.0.2',
+        'HOST': '10.128.0.5',
         'PORT': ''
     }
 }
