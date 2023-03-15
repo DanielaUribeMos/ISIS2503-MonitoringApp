@@ -5,6 +5,6 @@ def get_historias():
     return (queryset)
 
 def create_historia(form):
-    measurement = form.save()
-    measurement.save()
+    plantilla = form.save()
+    plantilla.save()
     return ()
