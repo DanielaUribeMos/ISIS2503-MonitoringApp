@@ -10,7 +10,7 @@ def historia_list(request):
     context = {
         'historia_list': historias
     }
-    return render(request, 'historia/historias.html', context)
+    return render(request, 'Historia/historias.html', context)
 
 def historia_create(request):
     if request.method == 'POST':
@@ -27,4 +27,4 @@ def historia_create(request):
     context = {
         'form': form,
     }
-    return render(request, 'historia/historiaCreate.html', context)
+    return render(request, 'Historia/historiaCreate.html', context)

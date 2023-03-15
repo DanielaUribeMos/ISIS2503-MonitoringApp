@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class HistoriasConfig(AppConfig):
-    name = 'Historias'
+    name = 'historias'

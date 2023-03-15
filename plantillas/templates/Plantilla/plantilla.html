@@ -4,11 +4,11 @@
 <div class="content">
     <div class="">
         <div class="page-header-title">
-            <h4 class="page-title">Last Ten Measures</h4>
+            <h4 class="page-title">Plantillas disponibles</h4>
             <!--- 
             <div style="text-align:right;">
                 <button type="button" class="btn btn-success waves-effect waves-light"
-                        onClick=" window.location.href='/measurementcreate' " style="text-align:center;">+
+                        onClick=" window.location.href='/plantillacreate' " style="text-align:center;">+
                 </button>
             </div>
             --->
@@ -27,21 +27,19 @@
                         <thead>
                         <tr style="color:#0E2EB0">
                             <th font color="red">Historia</th>
-                            <th>Value</th>
-                            <th>Unit</th>
-                            <th>Place</th>
+                            <th>Nombre</th>
+                            <th>Especificacion</th>
                             <th>Date Time</th>
                         </tr>
                         </thead>
                         <tbody>
 
-                        {% for measurement in measurement_list %}
+                        {% for plantilla in plantilla_list %}
                         <tr>
-                            <td>{{ measurement.historia.name }}</td>
-                            <td>{{ measurement.value }}</td>
-                            <td>{{ measurement.unit }}</td>
-                            <td>{{ measurement.place }}</td>
-                            <td>{{ measurement.dateTime }}</td>
+                            <td>{{ plantilla.historia.name }}</td>
+                            <td>{{ plantilla.nombre }}</td>
+                            <td>{{ plantilla.especificacion }}</td>
+                            <td>{{ plantilla.dateTime }}</td>
                         </tr>
                         {% endfor %}
 
